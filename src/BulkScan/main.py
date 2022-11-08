@@ -39,8 +39,8 @@ def scan_port(ip, port):
         print(f"{Fore.RESET}Port {Fore.LIGHTMAGENTA_EX}{port}{Fore.RESET} is {Fore.LIGHTRED_EX}closed{Fore.RESET} on {ip}")
 
 def main():
-    ip = input(f"{Fore.WHITE}Enter IP Address (1-65535): {Fore.BLUE}")
-    port_range = input(f"{Fore.WHITE}Enter Port Range : {Fore.LIGHTMAGENTA_EX}")
+    ip = input(f"{Fore.WHITE}Enter IP Address : {Fore.BLUE}")
+    port_range = input(f"{Fore.WHITE}Enter Port Range (1-65535): {Fore.LIGHTMAGENTA_EX}")
     port_range = port_range.split("-")
     port_range = list(range(int(port_range[0]), int(port_range[1]) + 1))
     for port in port_range:
